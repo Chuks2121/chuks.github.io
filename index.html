@@ -1,11 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AfriPentest | Pentester Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #0f0f0f;
@@ -17,6 +23,12 @@
       background-color: #1f1f1f;
       padding: 20px;
       text-align: center;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
     nav a {
       margin: 0 15px;
@@ -41,10 +53,20 @@
       color: #00ffae;
       text-decoration: none;
     }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 20px 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://avatars.githubusercontent.com/u/yourgithubID" alt="Chuks Ogwugwa" />
     <h1>AfriPentest</h1>
     <p>Portfolio of Chuks Ogwugwa – Aspiring Penetration Tester</p>
     <nav>
@@ -77,28 +99,32 @@
     <h2>Write-ups / Labs</h2>
     <div class="project">
       <h3>TryHackMe - Mr. Robot Walkthrough</h3>
-      <p>Steps taken to exploit the Mr. Robot VM on TryHackMe. <a href="#">[View Write-up]</a></p>
+      <p>Steps taken to exploit the Mr. Robot VM on TryHackMe. <a href="https://github.com/chuks2121/mrrobot-writeup">[View Write-up]</a></p>
     </div>
     <div class="project">
       <h3>HackTheBox - Blue Machine</h3>
-      <p>SMB enumeration and EternalBlue exploitation. <a href="#">[View Write-up]</a></p>
+      <p>SMB enumeration and EternalBlue exploitation. <a href="https://github.com/chuks2121/htb-blue">[View Write-up]</a></p>
+    </div>
+    <div class="project">
+      <h3>TryHackMe - Fail2Ban Privilege Escalation</h3>
+      <p>Exploit write-up for Fail2Ban local root privilege escalation. <a href="https://github.com/chuks2121/fail2ban-privesc">[View Write-up]</a></p>
     </div>
   </section>
 
   <section id="tools">
     <h2>Tools & Scripts</h2>
     <ul>
-      <li><a href="#">Simple Port Scanner (Python)</a></li>
-      <li><a href="#">Brute Force Script for FTP</a></li>
-      <li><a href="#">Recon Automation Script</a></li>
+      <li><a href="https://github.com/chuks2121/portscanner">Simple Port Scanner (Python)</a></li>
+      <li><a href="https://github.com/chuks2121/ftp-brute">Brute Force Script for FTP</a></li>
+      <li><a href="https://github.com/chuks2121/recon-script">Recon Automation Script</a></li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:chukylofashion@gmail.com">chukylofashion@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/chuks2121">@chuks2121</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/chuks-ogwugwa">@chuks-ogwugwa</a></p>
+    <p><i class="fa fa-envelope"></i> Email: <a href="mailto:chukylofashion@gmail.com">chukylofashion@gmail.com</a></p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/chuks2121">@chuks2121</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/chuks-ogwugwa">@chuks-ogwugwa</a></p>
   </section>
 
   <footer>
